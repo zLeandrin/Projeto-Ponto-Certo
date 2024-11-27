@@ -13,7 +13,7 @@ Bem-vindo ao repositório do **Ponto Certo**, um site inovador que oferece servi
 
 ### Arquivos HTML
 
-- `home.html`: Página Inicial para os usuários.
+- `index.html`: Página Inicial para os usuários.
 - `Login.html`: Página de login para os usuários.
 - `Registro.html`: Página para registro de novos usuários.
 - `sobre.html`: Página que conta a história e os valores da empresa.
