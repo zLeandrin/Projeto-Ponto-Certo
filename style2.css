@@ -1,0 +1,320 @@
+/* Estilos principais para o corpo da página */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 150px;
+    background-color: #696767;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Borda estilizada */
+.borda {
+    display: flex;
+    width: 142px;
+    height: 73px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    border-radius: 35px;
+    text-align: center;
+}
+
+/* Navegação */
+header ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jersey 15', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+/* Hover nos itens da navegação */
+header ul li:hover {
+    color: grey;
+}
+
+/* Links */
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 30px;
+    padding: 50px 10px;
+    color: #F55900;
+}
+
+/* Parágrafos */
+p {
+    padding: 20px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Caixa de conteúdo */
+.caixa {
+    width: 100%;
+    max-width: 1015px;
+    margin: auto;
+    padding: 50px;
+    background-color: #EAE8E6;
+    border-radius: 20px 20px 0px 20px;
+    font-size: 32px;
+    text-align: justify;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+}
+
+/* Destaque em texto */
+.caixa strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Imagem do logo */
+header img {
+    width: 137px;
+    height: 132px;
+    padding-left: 10px;
+    border-radius: 42px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Imagens em seções de texto */
+.Texto-01 img, .Texto-02 img {
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.Texto-02 {
+    display: flex;
+}
+.Texto-01 img {
+    width: 100%;
+    max-width: 783px;
+    height: auto;
+}
+
+.Texto-02 img {
+    width: 100%;
+    max-width: 253px;
+    height: auto;
+    border-radius: 50%;
+    padding: 5px;
+}
+.historia-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+}
+
+.historia-container img.logo-left {
+    max-width: 150px;
+            margin-right: 20px;
+}
+
+.historia-container img.logo-right {
+    left: calc(50% - 180px/2 + 455px);
+    transform: translateY(-50%);
+    max-width: 120px;
+    height: auto; 
+}
+    .container .text1 {
+        text-align: right;
+}
+.container .text2 {
+    text-align: left;
+}
+.MVLcontainer {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 1200px;
+}
+.coluna {
+    text-align: center;;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin: 0 10px;
+}
+
+ 
+.icone {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+ .contato h2 {
+    text-align: center;
+}
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+}
+.contato-container h2 {
+    text-align: center;
+    width: 45%;
+    margin: 0;
+}
+.contato-container p {
+    width: 45%;
+    margin: 0;
+}
+
+/* Responsividade para diferentes tamanhos de tela */
+
+/* Tablets */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    h1 { font-size: 2.5em; }
+    p { font-size: 1.2em; }
+    .Texto-01 img, .Texto-02 img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* Smartphones */
+@media only screen and (max-width: 767px) {
+    h1 { font-size: 2em; }
+    p { font-size: 1em; }
+
+    header {
+        height: auto;
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 80px;
+        height: auto;
+    }
+
+    .Texto-01, .Texto-02 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Texto-01 img, .Texto-02 img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* Ajuste das margens dos elementos */
+    h1, p {
+        margin: 10px;
+    }
+    
+    .caixa {
+        font-size: 1em;
+        padding: 20px;
+    }
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #e6e6e6;
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-logo-social,
+.footer-partners,
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo-social img.footer-logo {
+    width: 80px;
+    height: auto;
+}
+
+.footer-logo-social .social-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.footer-partners img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+
+.footer-menu a {
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #d1d1d1;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-menu a:hover {
+    background-color: #bbb;
+}
+
+/* Copyright */
+.footer-copyright {
+    background-color: #b3b3b3;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-menu a {
+        width: auto;
+    }
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados essenciais para SEO e responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Certo</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico.png" type="image/x-icon">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imgs/image1.png" alt="Logo da empresa">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="Trabalhe-conosco.html">Trabalhe conosco</a></li>
+            <li><a href="Registro.html">Registro</a></li>
+            <li class="borda"><a href="Login.html">Login</a></li>
+        </ul>
+    </header>
+
+    <a href="sua-pagina.html">
+        <button>Confira Disponibilidade!</button>
+      </a>
+      
+
+    <!-- Imagem principal -->
+    <img class="main-image" src="imgs/GPS.jpg" alt="GPS">
+
+    
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username">
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+            
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo-social">
+                <img src="imgs/image1.png" alt="Logo Ponto Certo" class="footer-logo">
+                <p>Redes sociais:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="imgs/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="imgs/linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="imgs/instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-partners">
+                <img src="imgs/shell-logo.png" alt="Logo Shell">
+                <img src="imgs/petrobras-logo.png" alt="Logo Petrobras">
+            </div>
+            <div class="footer-menu">
+                <a href="Registro.html">Registro</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="Trabalhe-conosco.html">Trabalhe conosco</a>
+                <a href="Login.html">Crie seu login</a>
+            </div>
+        </div>
+        <p class="footer-copyright">© Copyright 2024. Todos os direitos reservados.</p>
+    </footer>
+
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Cabeçalho */
+        header {
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            width: 100%;
+            height: 150px;
+            background-color: #696767;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        /* Borda estilizada */
+        .borda {
+            display: flex;
+            width: 142px;
+            height: 73px;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: white;
+            border-radius: 35px;
+            text-align: center;
+        }
+
+        /* Navegação */
+        header ul {
+            display: flex;
+            width: 100%;
+            list-style: none;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            font-family: 'Jersey 15', sans-serif;
+            font-size: 32px;
+            color: white;
+        }
+
+        /* Hover nos itens da navegação */
+        header ul li:hover {
+            color: grey;
+        }
+
+        /* Links */
+        a, a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Estilo da imagem principal */
+        .main-image {
+            width: 100%; /* Ajuste para a imagem ocupar toda a largura disponível */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block;
+            margin: 20px auto; /* Centraliza a imagem e adiciona espaçamento */
+        }
+
+        /* Estilos de imagem genéricos */
+        img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 15px;  
+        }
+
+        /* Caixa de conteúdo */
+        .caixa {
+            width: 100%;
+            max-width: 1015px;
+            margin: auto;
+            padding: 50px;
+            background-color: #EAE8E6;
+            border-radius: 20px 20px 0px 20px;
+            font-size: 32px;
+            text-align: justify;
+            word-wrap: break-word;
+            margin-bottom: 40px;
+        }
+
+        /* Login */
+        .login-container {
+            background: #e4e3e3;
+            padding: 30px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px; 
+            margin: 80px auto; 
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%; /* Diminuído */
+            padding: 8px; /* Ajustado */
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 50%;
+            padding: 10px;
+            background: #df7c0b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #df7c0b;
+        }
+
+        /* Estilos para o footer */
+        footer {
+            background-color: #e6e6e6;
+            padding: 20px 0;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            color: #333;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .footer-logo-social,
+        .footer-partners,
+        .footer-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo-social img.footer-logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .footer-logo-social .social-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+
+        .footer-partners img {
+            width: 100px;
+            height: auto;
+            margin: 5px;
+        }
+
+        .footer-menu a {
+            color: #333;
+            text-decoration: none;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 8px;
+            background-color: #d1d1d1;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-menu a:hover {
+            background-color: #bbb;
+        }
+
+        /* Copyright */
+        .footer-copyright {
+            background-color: #b3b3b3;
+            color: #333;
+            font-size: 14px;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        /* Responsividade */
+        @media only screen and (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .footer-menu a {
+                width: auto;
+            }
+        }
+
+        button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px; 
+  font-size: 14px; 
+  width: 25%
+}
+    </style>
+</body>
+</html>
