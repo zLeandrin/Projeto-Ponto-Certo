@@ -23,7 +23,7 @@ Bem-vindo ao repositório do **Ponto Certo**, um site inovador que oferece servi
 
 - `modelo.css`: Estilo principal usado em algumas páginas do site.
 - `style2.css`: Estilo adicional para a página sobre.
-- - `style2.css`: Estilo padrão.
+- `style.css`: Estilo padrão.
 
 ### Imagens
 
